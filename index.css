@@ -7,7 +7,7 @@
 }
 body.light-theme .home{
     background-color: #ffffff;
-    background-image: url(/asset/image/background\ img.png);
+    background-image: url(asset/image/background\ img.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ body.light-theme .home{
 body.dark-theme .home {
     background-color: #121212;
     color: #f1f1f1; 
-    background-image: url(/asset/image/background\ \ dark.png);
+    background-image: url(asset/image/background\ \ dark.png);
     background-size: cover;
     display: flex;
     justify-content: center;
