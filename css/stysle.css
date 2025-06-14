@@ -7,7 +7,6 @@
 }
 body.light-theme .home{
     background-color: #ffffff;
-    color: #2d3436;
     background-image: url(/asset/image/background\ img.png);
     background-size: cover;
     display: flex;
@@ -27,7 +26,74 @@ body.dark-theme .home {
     align-items: center;
     width: 100%;
     min-height: 100vh; 
+
 }
+
+body.dark-theme header {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme .logo a,
+body.dark-theme .navbar a {
+  color: #f1f1f1;
+}
+body.dark-theme .home-containt #hello,
+body.dark-theme .home-containt h1,
+body.dark-theme .highlight,
+body.dark-theme .intro {
+  color: #f1f1f1;
+}
+
+body.dark-theme .contant {
+  background-color: #1e1e1e;
+}
+body.dark-theme h2,
+body.dark-theme .about-contant h3,
+body.dark-theme .about-contant p,
+body.dark-theme .about-contant h5 {
+  color: #f1f1f1;
+}
+body.dark-theme .about-contant .highlight,
+body.dark-theme .about-contant h3 i{
+    color: yellow;
+}
+
+body.dark-theme .education,
+body.dark-theme .traning {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-left: 5px solid #00a8ff;
+}
+
+
+body.dark-theme .contact-contant {
+  background-color: #121212;
+}
+
+body.dark-theme .contact-contant h2,
+body.dark-theme .contact-contant h3,
+body.dark-theme .contact-contant p,
+body.dark-theme .contact-contant label,
+body.dark-theme .form-right h5,
+body.dark-theme .form-right h6 {
+  color: #f1f1f1;
+}
+
+body.dark-theme input,
+body.dark-theme textarea {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-color: #00a8ff;
+}
+
+body.dark-theme .footer {
+  background-color: #1e1e1e;
+}
+body.dark-theme .footer h1 {
+  color: #f1f1f1;
+}
+
+
 
 header {
     display: flex;
@@ -125,10 +191,7 @@ header {
     font-weight: lighter;
 }
 
-#profile-img{
-    /* background-color: transparent; */
-    height: 600px;
-}
+
 .contact{
     background: none;
     display: flex;
@@ -162,11 +225,13 @@ header {
     cursor: pointer;
     justify-content: center;
     margin-top: 30px;
+    
 }
 .media .sociel i{
     background: none;
     font-size: 30px;
     padding: 0px 20px;
+    transition: transform 0.2s;
 }
 
 .sociel:hover i {
@@ -185,10 +250,11 @@ h2{
 .contant{
     height: 100vh;
     width: 100%;
+    background-color: #fffefe;
 }
 
 h2{
-    color: #000;
+    color: #2c3e50;
     display: flex;
     justify-content: center;
     padding: 2% 0%;
@@ -198,14 +264,26 @@ h2{
 .about-contant{
     display: flex;
     padding: 2% 6%;
+    justify-content: space-between;
+    max-height: 600px;
 }
 .about-contant .about-me{
     padding: 2%;
+    max-width: 800px;
+    height: auto;
+}
+.about-contant .img{
+    padding: 2%;
+    width: 40vw;
+    max-width: 700px;
+    text-align: center;
+    height: auto;
+    ;
 }
 .about-contant h3{
     font-size: 150%;
     font-weight: bold;
-    color: #000000;
+    color: #34495e;
     margin-bottom: 5%;
     
 
@@ -214,42 +292,58 @@ h2{
     margin-right: 2%;
     align-self: center;
    font-size: 110%;
+   color: #007BFF;
+}
+.about-contant span {
+    color: #007BFF;
+    font-size: 1.6rem;
 }
 .about-contant p{
     line-height: 1.6;
     font-size: 120%;
+    color: #555
+}
+#profile-img{
+    /* background-color: transparent; */
+        height: 50vh;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
 }
 
 .about-contant .personal-info{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 8%;
+    flex-wrap: wrap;
 }
 .about-contant h5{
     font-size: 120%;
     margin-bottom: 2%;
+    color: #2c3e50;
 }
 
 .personal-info .education{
     padding: 2% 1%;
     height: 20vh;
-    width: 40vh;
-    background-color: #f9f9f9;
-    border-left: 5px solid #007BFF;
+    width: 17vw;
+    background-color: #f0f4f8;
+   border-left: 5px solid #007BFF;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     line-height: 1.6;
+    color: #333;
     
 }
 .personal-info .traning{
     padding: 2% 1%;
     height: 20vh;
-    width: 40vh;
-    background-color: #f9f9f9;
+    width: 17vw;
+    background-color: #f0f4f8;
     border-left: 5px solid #007BFF;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     line-height: 1.6;
+    color: #333;
 
 }
 
@@ -307,7 +401,7 @@ h2{
 .contact-me {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 30px;
 }
 
@@ -432,5 +526,112 @@ textarea {
 }
 .footer h1{
     font-size: 150%;
+
+}
+
+
+
+
+
+
+
+/* responsivnes */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home-containt {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    #profile-img {
+        height: 300px;
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .media {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .about-contant {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .about-contant .about-me,
+    .about-contant .personal-info {
+        width: 100%;
+    }
+
+    .personal-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .personal-info .education,
+    .personal-info .traning {
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-me {
+        flex-direction: column;
+    }
+
+    .contact-me .form {
+        width: 100%;
+    }
+
+    .form-right {
+        text-align: center;
+    }
+
+    .form-right h5,
+    .form-right h6 {
+        text-align: center;
+    }
+
+    .media2 {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-me button {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 6vh;
+        text-align: center;
+    }
+
+    .footer h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
 
 }
