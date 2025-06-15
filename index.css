@@ -96,14 +96,19 @@ body.dark-theme .footer h1 {
 
 
 header {
+    position: fixed;
+    top: 0; /* 👈 zaroori hai */
+    left: 0;
+    width: 100%; /* 👈 full screen mein spread ho jaaye */
     display: flex;
     padding: 10px 50px;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     background-color: whitesmoke;
+    z-index: 1000; /* 👈 content ke upar dikhne ke liye */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* optional: shadow for look */
 }
 
 .navbar{
- 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -251,7 +256,10 @@ h2{
     height: 100vh;
     width: 100%;
     background-color: #fffefe;
+    margin-top: 10vh;
+
 }
+
 
 h2{
     color: #2c3e50;
