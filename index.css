@@ -5,17 +5,45 @@
     font-size: large;
     font-family: auto;
 }
-body.light-theme .home{
-    background-color: #ffffff;
-    background-image: url(asset/image/background\ img.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 100vh; 
+
+body.dark-theme header,
+body.dark-theme .footer {
+  background-color: #1e1e1e;
+}
+body.dark-theme .logo a,
+body.dark-theme .navbar a {
+  color: #f1f1f1;
+}
+body.dark-theme label,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme p{
+    color: white;
 }
 
+body.dark-theme .home {
+    background-image: url(asset/image/background\ \ dark.png);
+}
+
+
+body.dark-theme section,
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme .education,
+body.dark-theme .traning,
+body.dark-theme .icon{
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 10px rgba(153, 148, 148, 0.1);
+}
+
+body.dark-theme .contact-contant {
+  background-color: #121212;
+}
+/* 
 body.dark-theme .home {
     background-color: #121212;
     color: #f1f1f1; 
@@ -91,9 +119,18 @@ body.dark-theme .footer {
 }
 body.dark-theme .footer h1 {
   color: #f1f1f1;
+}  */
+
+.home{
+    background-color: #ffffff;
+    background-image: url(asset/image/background\ img.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; 
 }
-
-
 
 header {
     position: fixed;
@@ -146,7 +183,7 @@ header {
     padding: 0.75rem 1.5rem;
     font-weight: bold;
     text-decoration: none;
-   
+   transition: 0.3s ease-in-out;
 }
 
 .navbar a:hover{
@@ -203,6 +240,11 @@ header {
     justify-content: center;
     flex-direction: column;
     
+}
+.contact .resume-botton{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .button #btn-cv {
@@ -335,7 +377,7 @@ h2{
     height: 20vh;
     width: 17vw;
     background-color: #f0f4f8;
-   border-left: 5px solid #0984e3;
+    border-left: 5px solid #0984e3;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     line-height: 1.6;
@@ -355,32 +397,36 @@ h2{
 
 }
 
-
+/* start sillks */
 .skill-contant{
     display: flex;
-    height: 70vh;
-    padding: 2% 2%;
-    justify-content: space-evenly
+    flex-wrap: wrap;
+    height: auto;
+    padding: 2% 6%;
+    justify-content: space-evenly;
+    gap: 2rem 5rem;
 }
 
 
 .skill-contant .icon{
-    height: 80px;
+    background-color: #f0f4f8;
+    height: 10vh;
     width: 16rem;
     color: #333;
-    margin: 2rem;
+    display: flex;
+    margin: 1rem  2rem;
     align-items: center;
     text-align: center;
     font-size: 1.2rem;
-    display: inline;
+    justify-content: space-around;
     font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     
 }
 
 .skill-contant img{
-    height: 80px;
-    display: inline;
-    margin: 20px, 50px; 
+    height: 90%;
 }
 
 
