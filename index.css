@@ -40,7 +40,8 @@ body.dark-theme .icon{
     box-shadow: 0 4px 10px rgba(153, 148, 148, 0.1);
 }
 
-body.dark-theme .contact-contant {
+body.dark-theme .contact-contant,
+body.dark-theme #skill {
   background-color: #121212;
 }
 /* 
@@ -296,7 +297,7 @@ header {
 
 .contant{
     height: 100vh;
-    width: 100%;
+    width: 100wh;
     background-color: #fffefe;
     padding: 2% 0%;
 
@@ -313,8 +314,9 @@ h2{
 
 .about-contant{
     display: flex;
+    flex-wrap: wrap;
     padding: 2% 6%;
-    justify-content: space-between;
+    justify-content: space-around;
     max-height: 600px;
 }
 .about-contant .about-me{
@@ -324,11 +326,11 @@ h2{
 }
 .about-contant .img{
     padding: 2%;
-    width: 40vw;
+    width: 24%;
     max-width: 700px;
     text-align: center;
     height: auto;
-    ;
+    
 }
 .about-contant h3{
     font-size: 150%;
@@ -353,11 +355,15 @@ h2{
     font-size: 120%;
     color: #555
 }
-#profile-img{
-    /* background-color: transparent; */
-        height: 50vh;
+#profile-img {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;  
     border-radius: 2rem;
     margin-top: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-contant .personal-info{
@@ -384,6 +390,10 @@ h2{
     color: #333;
     
 }
+
+.personal-info h6{
+    font-size: 1.2rem;
+}
 .personal-info .traning{
     padding: 2% 1%;
     height: 20vh;
@@ -397,7 +407,25 @@ h2{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* start sillks */
+
+
+#skill{
+    background-color:  rgb(243 244 246);
+}
 .skill-contant{
     display: flex;
     flex-wrap: wrap;
@@ -429,6 +457,10 @@ h2{
     height: 90%;
 }
 
+.skill-contant label{
+    font-size: 1.3rem;
+}
+
 
 
 
@@ -446,17 +478,65 @@ h2{
 /* start project  */
 
 .project-contant{
+    
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
+    padding: 2rem 5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem 5rem;
+    overflow-y: scroll;
+    /* overflow: scroll; */
 
 }
 
-.project-contant p{
-    font-size: 5rem;
-    font-style: italic;
+.project-contant .project{
+    height: 50%;
+    width: 20%;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    min-width: 400px;
+   
 }
+
+.project .project-img{
+    height: 70%;
+    width: 100%;  
+}
+
+.project .project-discrpsion{
+    height: 70%;
+    width: 100%;
+    background-color: #1e2022;
+    border-radius: 0 0 2rem 2rem ;
+    
+
+}
+
+.project  img{
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -616,102 +696,150 @@ textarea {
 
 
 /* responsivnes */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     header {
         flex-direction: column;
-        padding: 10px 20px;
-        align-items: center;
+        padding: 10px 15px;
     }
 
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
+    .logo a {
+        font-size: 1.2rem;
     }
 
     .navbar a {
-        padding: 10px;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        padding: 8px;
     }
 
     .home {
         flex-direction: column;
-        padding: 20px;
         text-align: center;
+        padding: 10px;
+        background-position: center;
     }
 
     .home-containt {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .home-containt h1 {
+        font-size: 1.5rem;
+    }
+
+    .highlight {
+        font-size: 1rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .contact .resume-botton {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .button #btn-cv {
+        width: 80%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .skill-contant {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 1rem;
+    }
+
+    .skill-contant .icon {
         width: 90%;
-        font-size: 20px;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+        font-size: 1rem;
     }
 
-    #profile-img {
-        height: 300px;
-        width: auto;
-        margin-top: 20px;
-    }
-
-    .media {
-        flex-wrap: wrap;
-        gap: 15px;
+    .project-contant p {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0 10px;
     }
 
     .about-contant {
         flex-direction: column;
-        padding: 5%;
+        padding: 10px;
+        max-height: none;
     }
 
-    .about-contant .about-me,
-    .about-contant .personal-info {
+    .about-contant .img {
         width: 100%;
+        text-align: center;
+    }
+
+    .about-contant .about-me {
+        width: 100%;
+    }
+
+    #profile-img {
+        width: 90%;
+        height: auto;
     }
 
     .personal-info {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
     }
 
     .personal-info .education,
     .personal-info .traning {
         width: 90%;
         height: auto;
+        font-size: 0.9rem;
     }
 
-    .contact-me {
-        flex-direction: column;
+    .contact-contant {
+        padding: 20px 10px;
     }
 
-    .contact-me .form {
-        width: 100%;
+    .form-field label {
+        font-size: 1rem;
     }
 
-    .form-right {
-        text-align: center;
+    input, textarea {
+        font-size: 1rem;
     }
 
-    .form-right h5,
+    .form-right h5 {
+        font-size: 1.5rem;
+    }
+
     .form-right h6 {
-        text-align: center;
+        font-size: 1rem;
     }
 
     .media2 {
-        justify-content: center;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
-    .contact-me button {
-        width: 100%;
+    .sociel2 i {
+        font-size: 2rem;
     }
 
-    h2 {
-        font-size: 6vh;
-        text-align: center;
+    .footer {
+        height: auto;
+        padding: 10px;
     }
 
     .footer h1 {
         font-size: 1rem;
         text-align: center;
     }
-
 }
