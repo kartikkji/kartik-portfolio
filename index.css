@@ -300,6 +300,7 @@ header {
     width: 100wh;
     background-color: #fffefe;
     padding: 2% 0%;
+    flex: 1 1 45%;
 
 }
 
@@ -371,6 +372,7 @@ h2{
     justify-content: space-between;
     margin-top: 8%;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 .about-contant h5{
     font-size: 120%;
@@ -380,14 +382,15 @@ h2{
 
 .personal-info .education{
     padding: 2% 1%;
-    height: 20vh;
-    width: 17vw;
+    height: 20%;
+    width: 17%;
     background-color: #f0f4f8;
     border-left: 5px solid #0984e3;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     line-height: 1.6;
     color: #333;
+    flex: 1 1 45%;
     
 }
 
@@ -396,14 +399,15 @@ h2{
 }
 .personal-info .traning{
     padding: 2% 1%;
-    height: 20vh;
-    width: 17vw;
+    height: 20%;
+    width: 17%;
     background-color: #f0f4f8;
     border-left: 5px solid #0984e3;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     line-height: 1.6;
     color: #333;
+    flex: 1 1 45%;
 
 }
 
@@ -425,6 +429,7 @@ h2{
 
 #skill{
     background-color:  rgb(243 244 246);
+    flex: 1 1 45%;
 }
 .skill-contant{
     display: flex;
@@ -438,7 +443,7 @@ h2{
 
 .skill-contant .icon{
     background-color: #f0f4f8;
-    height: 10vh;
+    height: 5rem;
     width: 16rem;
     color: #333;
     display: flex;
@@ -543,7 +548,7 @@ h2{
 /* contact start */
 
 .contact-contant {
-    min-height: 100vh;
+    min-height: 100%;
     background-color: rgb(243 244 246);
     padding: 2% 5%;
     box-sizing: border-box;
@@ -675,6 +680,10 @@ textarea {
 
 
 
+
+
+
+
 /* footer start */
 
 .footer{
@@ -695,8 +704,13 @@ textarea {
 
 
 
+
+
+
+
 /* responsivnes */
-@media (max-width: 480px) {
+/* 
+@media (max-width: 760px) {
 
     header {
         flex-direction: column;
@@ -842,4 +856,4 @@ textarea {
         font-size: 1rem;
         text-align: center;
     }
-}
+} */
