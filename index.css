@@ -297,7 +297,6 @@ header {
 
 .contant{
     height: 100vh;
-    width: 100wh;
     background-color: #fffefe;
     padding: 2% 0%;
     flex: 1 1 45%;
@@ -327,7 +326,7 @@ h2{
 }
 .about-contant .img{
     padding: 2%;
-    width: 24%;
+    width: 30%;
     max-width: 700px;
     text-align: center;
     height: auto;
@@ -511,16 +510,6 @@ h2{
     height: 70%;
     width: 100%;  
 }
-
-.project .project-discrpsion{
-    height: 70%;
-    width: 100%;
-    background-color: #1e2022;
-    border-radius: 0 0 2rem 2rem ;
-    
-
-}
-
 .project  img{
     height: 100%;
     background-size: cover;
@@ -528,6 +517,62 @@ h2{
     border-radius: 2rem 2rem 0 0;
 
 }
+
+.project .project-discrpsion{
+    height: 70%;
+    width: 100%;
+    background-color: #1e2022;
+    border-radius: 0 0 2rem 2rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    
+
+}
+.project-discrpsion a{
+    width: 40%;
+    height: 40%;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    
+
+}
+
+.project-discrpsion button {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.project-discrpsion button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05);   
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.project-discrpsion span{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
 
 
 
